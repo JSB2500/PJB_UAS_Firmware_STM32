@@ -24,7 +24,8 @@ Suggested speakers:
 ===============================================================================
 STM32 firmware:
 • Tool: STM32CubeIDE 1.19.0
-• Programmer: STLink connected to JP5.
+• Cube library: ~STM32Cube FW_F7 V1.17.4 (See *.ioc file for actual version).
+• Programmer: STLink connected to JP5 of UAS PCB.
 • Overview:
    • Project created in CubeMX 5.0.0.
    • Uses RTOS.
