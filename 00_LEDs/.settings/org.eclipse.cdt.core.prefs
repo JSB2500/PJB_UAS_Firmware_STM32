@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/com.atollic.truestudio.exe.debug.1518366166/STM32CUBE/delimiter=;
+environment/project/com.atollic.truestudio.exe.debug.1518366166/STM32CUBE/operation=append
+environment/project/com.atollic.truestudio.exe.debug.1518366166/STM32CUBE/value=C\:\\ST\\Firmware\\STM32Cube_FW_F7_V1.15.0
+environment/project/com.atollic.truestudio.exe.debug.1518366166/append=true
+environment/project/com.atollic.truestudio.exe.debug.1518366166/appendContributed=true
+environment/project/com.atollic.truestudio.exe.release.1518366166/STM32CUBE/delimiter=;
+environment/project/com.atollic.truestudio.exe.release.1518366166/STM32CUBE/operation=append
+environment/project/com.atollic.truestudio.exe.release.1518366166/STM32CUBE/value=C\:\\ST\\Firmware\\STM32Cube_FW_F7_V1.15.0
+environment/project/com.atollic.truestudio.exe.release.1518366166/append=true
+environment/project/com.atollic.truestudio.exe.release.1518366166/appendContributed=true

@@ -1,0 +1,64 @@
+===============================================================================
+JSB
+===============================================================================
+STM32 firmware:
+=> Tool: Atollic TrueSTUDIO for STM32 9.2.0
+=> Programmer: STLink connected to JP5.
+=> Overview:
+   => Project created in CubeMX 5.0.0.
+   => Uses RTOS.
+      => Tasks / semaphores etc created in CubeMX.
+=> Debugging:
+   => Hard faults:
+      => Red LED lights.
+      => Use hard fault view in TrueStudio Debug perspective to debug.
+===============================================================================
+Bluetooth output:
+=> Bluetooth device: Left-hand ESP32. [13/9/2019: Change this to RH so that WiFI ESP32 is near WiFi access point in living room]
+=> Interface: GenSPI. This is used for control purposes and for sending I2S audio to the ESP32.
+=> ESP32 software: C:\JSB\Cloud\Spaceless\PJB_Radio_ESP32\05_BluetoothSource
+=> ESP32 programming and monitoring:
+   => Protocol: RS232 (serial)
+   => Baud rate: 921600
+   => Board connector: JP1
+   => Interface: FT4232 (Quad serial etc) Port C
+   => COM port: COM8
+      => This is set using "make menuconfig" but best to set connected com port to this instead of changing software.
+=> Setup:
+   => Windows 7
+   => Msys command prompt at firmware folder.
+=> Normal activities:
+    => Build firmware: make -j all
+    => Program firmware: make flash
+    => Monitor: make monitor
+=> Debugging:
+   => Monitor serial output.
+   => This reports such things as the state of the buffer that connects the SPI data to the Bluetooth stack.
+   => Can connect port A of FT4232 to JP2 to do JTAG debugging. See administrator KB for more information.
+===============================================================================
+SPDIF input:
+
+SPDIF0:
+=> STM32 pin: PD7
+=> Use in JSB firmware: "Humax"
+
+SPDIF1:
+=> STM32 pin: PD8
+=> Use in JSB firmware: "DVD/HDD"
+
+SPDIF2:
+=> STM32 pin: PC4
+=> Use in JSB firmware: "Google Chromecast Audio"
+
+SPDIF3:
+=> STM32 pin: PC5
+=> Use in JSB firmware: "Computer"
+
+===
+JSB office UAS:
+
+SPDIF receiver:
+=> White: STM32 pin 75 = VDD(3V3)
+=> Black: STM32 pin 74 = VSS(0V)
+=> Yellow: STM32 pin 33 = STM32.PC5 [SPDIF3 = "Computer" on input selection menu]
+===============================================================================

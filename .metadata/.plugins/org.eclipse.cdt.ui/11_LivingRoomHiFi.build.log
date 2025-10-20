@@ -1,0 +1,18 @@
+12:02:51 **** Incremental Build of configuration Debug for project 11_LivingRoomHiFi ****
+make -j32 all 
+arm-none-eabi-gcc -o "11_LivingRoomHiFi.elf" @"objects.list"   -mcpu=cortex-m7 -T"../STM32F767VI_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_LivingRoomHiFi.map" -Wl,--gc-sections -static -L"C:\JSB\People\Family\03 John and Anne children\00 Philip\03 Surrey University\01 Uni 2nd year\Uber audio system\Firmware\STM32\11_LivingRoomHiFi" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=softfp -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 11_LivingRoomHiFi.elf
+ 
+arm-none-eabi-size  11_LivingRoomHiFi.elf 
+arm-none-eabi-objdump -h -S 11_LivingRoomHiFi.elf  > "11_LivingRoomHiFi.list"
+   text	   data	    bss	    dec	    hex	filename
+  80168	   1480	 120760	 202408	  316a8	11_LivingRoomHiFi.elf
+Finished building: default.size.stdout
+ 
+Finished building: 11_LivingRoomHiFi.list
+ 
+arm-none-eabi-objcopy.exe -O ihex "11_LivingRoomHiFi.elf" "11_LivingRoomHiFi.hex"
+ 
+
+12:02:52 Build Finished. 0 errors, 0 warnings. (took 690ms)
+

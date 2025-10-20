@@ -1,0 +1,12 @@
+20:23:00 **** Incremental Build of configuration Debug for project 01_Display ****
+make -j4 all 
+arm-none-eabi-size   01_Display.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32036	    488	  26572	  59096	   e6d8	01_Display.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "01_Display.elf" "01_Display.hex"
+ 
+
+20:23:05 Build Finished. 0 errors, 0 warnings. (took 4s.473ms)
+

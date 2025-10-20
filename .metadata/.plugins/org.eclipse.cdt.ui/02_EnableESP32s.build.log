@@ -1,0 +1,12 @@
+20:23:05 **** Incremental Build of configuration Debug for project 02_EnableESP32s ****
+make -j4 all 
+arm-none-eabi-size   02_EnableESP32s.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31076	    488	  26572	  58136	   e318	02_EnableESP32s.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "02_EnableESP32s.elf" "02_EnableESP32s.hex"
+ 
+
+20:23:10 Build Finished. 0 errors, 0 warnings. (took 4s.341ms)
+

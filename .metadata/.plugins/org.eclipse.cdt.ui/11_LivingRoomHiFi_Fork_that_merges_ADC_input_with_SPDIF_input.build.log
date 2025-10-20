@@ -1,0 +1,12 @@
+20:13:45 **** Incremental Build of configuration Debug for project 11_LivingRoomHiFi_Fork_that_merges_ADC_input_with_SPDIF_input ****
+make -j4 all 
+arm-none-eabi-size   11_LivingRoomHiFi_Fork_that_merges_ADC_input_with_SPDIF_input.elf 
+   text	   data	    bss	    dec	    hex	filename
+  98228	   1492	 111932	 211652	  33ac4	11_LivingRoomHiFi_Fork_that_merges_ADC_input_with_SPDIF_input.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "11_LivingRoomHiFi_Fork_that_merges_ADC_input_with_SPDIF_input.elf" "11_LivingRoomHiFi_Fork_that_merges_ADC_input_with_SPDIF_input.hex"
+ 
+
+20:13:50 Build Finished. 0 errors, 0 warnings. (took 4s.924ms)
+
