@@ -17,6 +17,9 @@ Audio ouputs:
 Power supply requirements:
 • Connector marked "5V": 5V
 • Connector marked "12V": 12V to 24V. Ideally 19V for 6R speakers and 24 V for 8R speakers.
+
+Suggested speakers:
+• Wharfedale 220
 ===============================================================================
 STM32 firmware:
 • Tool: STM32CubeIDE 1.19.0
