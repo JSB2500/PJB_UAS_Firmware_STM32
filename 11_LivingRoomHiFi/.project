@@ -407,11 +407,11 @@
 	<variableList>
 		<variable>
 			<name>STFirmware</name>
-			<value>file:/C:/ST/Firmware</value>
+			<value>file:/C:/ST/Repository</value>
 		</variable>
 		<variable>
 			<name>STM32CUBE</name>
-			<value>file:/C:/ST/Firmware/STM32Cube_FW_F7_V1.15.0</value>
+			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.17.4</value>
 		</variable>
 	</variableList>
 </projectDescription>
