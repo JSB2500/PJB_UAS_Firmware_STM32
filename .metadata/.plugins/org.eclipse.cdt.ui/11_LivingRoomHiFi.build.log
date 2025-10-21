@@ -1,12 +1,13 @@
-12:02:51 **** Incremental Build of configuration Debug for project 11_LivingRoomHiFi ****
+23:56:46 **** Incremental Build of configuration Debug for project 11_LivingRoomHiFi ****
 make -j32 all 
+arm-none-eabi-gcc -c "C:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spdifrx.c" -mcpu=cortex-m7 -std=gnu11 -g3 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F767xx -DXPT2046_Swap_YD_and_YU -c -I../Inc -I../../Shared -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Drivers/STM32F7xx_HAL_Driver/Inc -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Drivers/CMSIS/Device/ST/STM32F7xx/Include -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Drivers/CMSIS/Include -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Middlewares/Third_Party/FreeRTOS/Source/include -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -IC:/ST/Repository/STM32Cube_FW_F7_V1.17.4/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -IC:/ST/Firmware/STM32AudioMiddlewares/Codecs/SpiritDSP_MP3_Dec/inc -Og -ffunction-sections -fdata-sections -Wall -Wno-main -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_spdifrx.d" -MT"Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_spdifrx.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=softfp -mthumb -o "Drivers/STM32F7xx_HAL_Driver/stm32f7xx_hal_spdifrx.o"
 arm-none-eabi-gcc -o "11_LivingRoomHiFi.elf" @"objects.list"   -mcpu=cortex-m7 -T"../STM32F767VI_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_LivingRoomHiFi.map" -Wl,--gc-sections -static -L"C:\JSB\People\Family\03 John and Anne children\00 Philip\03 Surrey University\01 Uni 2nd year\Uber audio system\Firmware\STM32\11_LivingRoomHiFi" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=softfp -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: 11_LivingRoomHiFi.elf
  
 arm-none-eabi-size  11_LivingRoomHiFi.elf 
 arm-none-eabi-objdump -h -S 11_LivingRoomHiFi.elf  > "11_LivingRoomHiFi.list"
    text	   data	    bss	    dec	    hex	filename
-  80168	   1480	 120760	 202408	  316a8	11_LivingRoomHiFi.elf
+  82280	   1480	 120824	 204584	  31f28	11_LivingRoomHiFi.elf
 Finished building: default.size.stdout
  
 Finished building: 11_LivingRoomHiFi.list
@@ -14,5 +15,5 @@ Finished building: 11_LivingRoomHiFi.list
 arm-none-eabi-objcopy.exe -O ihex "11_LivingRoomHiFi.elf" "11_LivingRoomHiFi.hex"
  
 
-12:02:52 Build Finished. 0 errors, 0 warnings. (took 690ms)
+23:56:47 Build Finished. 0 errors, 0 warnings. (took 839ms)
 

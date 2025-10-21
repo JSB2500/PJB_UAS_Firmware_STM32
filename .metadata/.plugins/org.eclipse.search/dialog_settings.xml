@@ -20,7 +20,7 @@
 		<item key="WHOLE_WORD" value="false"/>
 		<item key="SEARCH_DERIVED" value="false"/>
 		<item key="SEARCH_IN_BINARIES" value="false"/>
-		<item key="HISTORY_SIZE" value="10"/>
+		<item key="HISTORY_SIZE" value="12"/>
 		<section name="EXTENSIONS">
 			<item key="0" value="*.c, *.c++, *.c;*.h, *.cc, *.cpp, *.h"/>
 			<item key="1" value="*.c;*.h"/>
@@ -30,7 +30,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="USE_HAL_TIM_REGISTER_CALLBACKS"/>
+			<item key="textPattern" value="C:/ST/Firmware/STM32Cube_FW_F7_V1.15.0"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.h"/>
@@ -47,7 +47,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="SPDIFRX_MuteOutput_Callback"/>
+			<item key="textPattern" value="EnsureFixPresent_Fix_JSB_20191115_HAL_RCCEx_GetPeriphCLKConfig__PLLDivisionFactors"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.h"/>
@@ -64,7 +64,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="CubicInterpolate"/>
+			<item key="textPattern" value="Ensure"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -81,7 +81,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="MP3"/>
+			<item key="textPattern" value="USE_HAL_TIM_REGISTER_CALLBACKS"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.c"/>
@@ -98,7 +98,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="MP3Decoder_GetDataCallback"/>
+			<item key="textPattern" value="SPDIFRX_MuteOutput_Callback"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.h"/>
@@ -115,15 +115,15 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="MP3Decoder_Initialize"/>
+			<item key="textPattern" value="CubicInterpolate"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
-				<item value="*.h"/>
-				<item value="*.cc"/>
-				<item value="*.c++"/>
-				<item value="*.cpp"/>
-				<item value="*.c;*.h"/>
 				<item value="*.c"/>
+				<item value="*.c++"/>
+				<item value="*.c;*.h"/>
+				<item value="*.cc"/>
+				<item value="*.cpp"/>
+				<item value="*.h"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -132,15 +132,15 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="Interrupt_Status"/>
+			<item key="textPattern" value="MP3"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
-				<item value="*.h"/>
-				<item value="*.cc"/>
-				<item value="*.c++"/>
-				<item value="*.cpp"/>
-				<item value="*.c;*.h"/>
 				<item value="*.c"/>
+				<item value="*.c++"/>
+				<item value="*.c;*.h"/>
+				<item value="*.cc"/>
+				<item value="*.cpp"/>
+				<item value="*.h"/>
 			</list>
 			<list key="workingSets">
 			</list>
@@ -149,7 +149,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="Si468x.h"/>
+			<item key="textPattern" value="MP3Decoder_GetDataCallback"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*.h"/>
@@ -166,6 +166,57 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="MP3Decoder_Initialize"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.h"/>
+				<item value="*.cc"/>
+				<item value="*.c++"/>
+				<item value="*.cpp"/>
+				<item value="*.c;*.h"/>
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="Interrupt_Status"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.h"/>
+				<item value="*.cc"/>
+				<item value="*.c++"/>
+				<item value="*.cpp"/>
+				<item value="*.c;*.h"/>
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY10">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="Si468x.h"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*.h"/>
+				<item value="*.cc"/>
+				<item value="*.c++"/>
+				<item value="*.cpp"/>
+				<item value="*.c;*.h"/>
+				<item value="*.c"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY11">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
 			<item key="textPattern" value="&quot;Si468x.h"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
@@ -179,18 +230,6 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY9">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="uint8_t read_buffer[4]"/>
-			<item key="scope" value="0"/>
-			<list key="fileNamePatterns">
-				<item value="*.c"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
 	</section>
 	<section name="SearchDialog.ScopePart">
 		<item key="scope" value="0"/>
@@ -198,7 +237,7 @@
 	<section name="DialogBounds_SearchDialog">
 		<item key="DIALOG_X_ORIGIN" value="715"/>
 		<item key="DIALOG_Y_ORIGIN" value="225"/>
-		<item key="DIALOG_WIDTH" value="506"/>
+		<item key="DIALOG_WIDTH" value="513"/>
 		<item key="DIALOG_HEIGHT" value="483"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>

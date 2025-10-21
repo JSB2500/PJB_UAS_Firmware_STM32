@@ -1,4 +1,0 @@
-../Src/freertos.c:178:6:MainTask_Start	1
-../Src/freertos.c:198:6:ProcessAudioTask_Start	1
-../Src/freertos.c:107:6:vApplicationGetIdleTaskMemory	1
-../Src/freertos.c:121:6:MX_FREERTOS_Init	1

@@ -1,6 +1,0 @@
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:13:6:si468x_FM_tune	2
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:27:6:si468x_FM_seek	2
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:47:6:si468x_FM_RDS_status	2
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:80:6:JSB_si468x_FM_get_rsq_status	2
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:98:7:JSB_si468x_FM_get_frequency	1
-C:/JSB/People/Family/03 John and Anne children/00 Philip/03 Surrey University/01 Uni 2nd year/Uber audio system/Firmware/STM32/Shared/Si468x/Si468x_FM.c:105:9:JSB_si468x_FM_get_stereo_separation	2
