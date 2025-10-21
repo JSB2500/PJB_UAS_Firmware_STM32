@@ -63,7 +63,7 @@ main-build: 11_LivingRoomHiFi.elf secondary-outputs
 
 # Tool invocations
 11_LivingRoomHiFi.elf 11_LivingRoomHiFi.map: $(OBJS) $(USER_OBJS) ../STM32F767VI_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "11_LivingRoomHiFi.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"../STM32F767VI_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_LivingRoomHiFi.map" -Wl,--gc-sections -static -L"C:\JSB\People\Family\03 John and Anne children\00 Philip\03 Surrey University\01 Uni 2nd year\Uber audio system\Firmware\STM32\11_LivingRoomHiFi" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=softfp -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "11_LivingRoomHiFi.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"../STM32F767VI_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_LivingRoomHiFi.map" -Wl,--gc-sections -static -L"/home/jsb/PJB Uber Audio System/PJB_UAS_Firmware_STM32/11_LivingRoomHiFi" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=softfp -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -83,7 +83,7 @@ clean:
 	-@echo ' '
 
 post-build:
-	arm-none-eabi-objcopy.exe -O ihex "11_LivingRoomHiFi.elf" "11_LivingRoomHiFi.hex"
+	arm-none-eabi-objcopy -O ihex "11_LivingRoomHiFi.elf" "11_LivingRoomHiFi.hex"
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
