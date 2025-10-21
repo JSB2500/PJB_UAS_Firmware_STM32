@@ -84,3 +84,32 @@ SPDIF receiver:
 • Black: STM32 pin 74 = VSS(0V)
 • Yellow: STM32 pin 33 = STM32.PC5 [SPDIF3 = "Computer" on input selection menu]
 ===============================================================================
+Cube library issues and fixes:
+=====
+Date: 15/11/2019
+Symptom: SPDIF resampler does not synchronize.
+Cause: PLL configuration bug in file stm32f7xx_hal_rcc_ex.c. Registers PeriphClkInit->PLLI2SDivQ and PeriphClkInit->PLLSAIDivQ are both set to a value that is 1 too low.
+Solution: Apply JSB fix to file stm32f7xx_hal_rcc_ex.c.
+Notes: Test fix presence by calling EnsureFixPresent_Fix_JSB_20191115_HAL_RCCEx_GetPeriphCLKConfig__PLLDivisionFactors() from code.
+=====
+Date: 15/11/2019
+Symptom: SPDIF timeout issue. I don't remember the details.
+Cause: SPDIFRX_TIMEOUT_VALUE in file stm32f7xx_hal_spdifrx.c.
+Solution: Change SPDIFRX_TIMEOUT_VALUE to 1000. Was 0xFFFFU in V1.15, and is 0x0010U in V17.4.
+How: Apply JSB fix to file stm32f7xx_hal_spdifrx.c.
+Notes: Test fix presence by calling EnsureFixPresent_Fix_JSB_20191115_SPDIFRX_TIMEOUT_VALUE() from code.
+=====
+Date: 15/11/2019
+Symptom: SPDIF input works once but not after HAL_SPDIFRX_DMAStop() is called.
+Cause: Bits 4+ of hspdif->Instance->CR register cleared incorrectly in HAL_SPDIFRX_DMAStop().
+Solution: Don't clear bits 4+ of hspdif->Instance->CR register in function HAL_SPDIFRX_DMAStop() in file stm32f7xx_hal_spdifrx.c.
+How: Apply JSB fix to file stm32f7xx_hal_spdifrx.c.
+Notes: Test fix presence by calling EnsureFixPresent_Fix_JSB_20191115_HAL_SPDIFRX_DMAStop__CR() from code.
+=====
+Date: 15/11/2019
+Symptom: SPDIF input L&R channels reversed after HAL_SPDIFRX_DMAStop() is called.
+Cause: Current DMA activity is not aborted before the DMA is stopped.
+Solution: Abort the current DMA activity before stopping the DMA.
+How: Apply JSB fix to file stm32f7xx_hal_spdifrx.c.
+void EnsureFixPresent_Fix_JSB_20191115_HAL_SPDIFRX_DMAStop__DMA_Abort() {} // JSB
+===============================================================================
