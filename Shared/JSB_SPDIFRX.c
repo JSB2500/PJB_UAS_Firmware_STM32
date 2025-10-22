@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
-// File name: JSB_WM8994_STM32F769Discovery.c
-// Author: J S Bladen 2018
-// Description: wm8994 interface for STM32F769 Discovery board.
+// File name: JSB_SPDIFRX.c
+// Author: J S Bladen
+// Description: SPDIF receiver
 ///////////////////////////////////////////////////////////////////////////////
 // Notes:
 // => Requires optical digital receiver:
