@@ -402,6 +402,7 @@ uint8_t SPDIFRX_Start(float TargetSampleRate, uint32_t InputChannel, uint8_t For
 
   // Start input sample rate timer:
   HAL_TIM_RegisterCallback(&htim11, HAL_TIM_IC_CAPTURE_CB_ID, &CaptureCallback);
+  HAL_TIM_IC_Stop_IT(&htim11, TIM_CHANNEL_1); // Added 22/10/2025
   if (HAL_TIM_IC_Start_IT(&htim11, TIM_CHANNEL_1))
     Error_Handler();
 
