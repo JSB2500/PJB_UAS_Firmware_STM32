@@ -58,7 +58,7 @@
 /* USER CODE BEGIN Includes */
 
 #include "JSB_General.h"
-#include "Go.h"
+ #include "go.h"
 
 /* USER CODE END Includes */
 
