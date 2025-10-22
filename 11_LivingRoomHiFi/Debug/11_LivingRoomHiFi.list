@@ -23,27 +23,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   9 .ARM.attributes 0000002c  00000000  00000000  000165c8  2**0
                   CONTENTS, READONLY
- 10 .debug_info   0004702f  00000000  00000000  000165f4  2**0
+ 10 .debug_info   00046fb3  00000000  00000000  000165f4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 11 .debug_abbrev 00008509  00000000  00000000  0005d623  2**0
+ 11 .debug_abbrev 000084df  00000000  00000000  0005d5a7  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 12 .debug_loclists 0001a0cc  00000000  00000000  00065b2c  2**0
+ 12 .debug_loclists 0001a0cc  00000000  00000000  00065a86  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_aranges 000028a8  00000000  00000000  0007fbf8  2**3
+ 13 .debug_aranges 000028a8  00000000  00000000  0007fb58  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_rnglists 00002093  00000000  00000000  000824a0  2**0
+ 14 .debug_rnglists 00002093  00000000  00000000  00082400  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_macro  000304b5  00000000  00000000  00084533  2**0
+ 15 .debug_macro  000304bf  00000000  00000000  00084493  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_line   0003e98f  00000000  00000000  000b49e8  2**0
+ 16 .debug_line   0003e999  00000000  00000000  000b4952  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_str    00115455  00000000  00000000  000f3377  2**0
+ 17 .debug_str    00115455  00000000  00000000  000f32eb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .comment      00000043  00000000  00000000  002087cc  2**0
+ 18 .comment      00000043  00000000  00000000  00208740  2**0
                   CONTENTS, READONLY
- 19 .debug_frame  0000892c  00000000  00000000  00208810  2**2
+ 19 .debug_frame  0000892c  00000000  00000000  00208784  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_line_str 00000070  00000000  00000000  0021113c  2**0
+ 20 .debug_line_str 00000070  00000000  00000000  002110b0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -8859,7 +8859,7 @@ HAL_StatusTypeDef HAL_SPDIFRX_ReceiveDataFlow_DMA(SPDIFRX_HandleTypeDef *hspdif,
 {
  8003a84:	b570      	push	{r4, r5, r6, lr}
  8003a86:	4604      	mov	r4, r0
-  register uint32_t count = SPDIFRX_TIMEOUT_VALUE * (SystemCoreClock / 24U / 1000U);
+  uint32_t count = SPDIFRX_TIMEOUT_VALUE * (SystemCoreClock / 24U / 1000U);
  8003a88:	4b50      	ldr	r3, [pc, #320]	@ (8003bcc <HAL_SPDIFRX_ReceiveDataFlow_DMA+0x148>)
  8003a8a:	681d      	ldr	r5, [r3, #0]
  8003a8c:	4b50      	ldr	r3, [pc, #320]	@ (8003bd0 <HAL_SPDIFRX_ReceiveDataFlow_DMA+0x14c>)
@@ -8930,7 +8930,7 @@ HAL_StatusTypeDef HAL_SPDIFRX_ReceiveDataFlow_DMA(SPDIFRX_HandleTypeDef *hspdif,
  8003aea:	64d1      	str	r1, [r2, #76]	@ 0x4c
 
     /* Enable the DMA request */
-    if (HAL_DMA_Start_IT(hspdif->hdmaDrRx, (uint32_t)&hspdif->Instance->DR, (uint32_t)hspdif->pRxBuffPtr, Size) != HAL_OK)
+    if (HAL_DMA_Start_IT(hspdif->hdmaDrRx, (uint32_t)&hspdif->Instance->DR, (uint32_t)hspdif->pRxBuffPtr, Size) !=
  8003aec:	6821      	ldr	r1, [r4, #0]
  8003aee:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
  8003af0:	3110      	adds	r1, #16
