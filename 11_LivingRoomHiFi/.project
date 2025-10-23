@@ -406,11 +406,7 @@
 		</variable>
 		<variable>
 			<name>STM32CUBE</name>
-<<<<<<< HEAD
 			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.17.4</value>
-=======
-			<value>file:/home/jsb/STM32Cube/Repository/STM32Cube_FW_F7_V1.17.4</value>
->>>>>>> Linux_version
 		</variable>
 	</variableList>
 </projectDescription>
