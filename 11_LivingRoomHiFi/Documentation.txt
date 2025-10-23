@@ -1,27 +1,4 @@
 ===============================================================================
-Description:
-
-Audio sources:
-• 4 SPDIF inputs
-• Onboard DAB radio
-• Onboard FM radio
-• Onboard AM radio
-• Analogue (3.5 mm blue jack)
-• Onboard ESP32 e.g. Bluetooth in and Internet in (via WiFi) (Requires the ESP32 to contain the appropriate firmware)
-
-Audio ouputs:
-• Speakers. Left and Right. Preferably 6R to 8R.
-• HiFi headphone output (3.5 mm green jack)
-• LoFi headphone output (3.5 mm green jack)
-• On board ESP32 e.g. Bluetooth (SBC codec) (Requires the ESP32 to contain the appropriate firmware)
-
-Power supply requirements:
-• Connector marked "5V": 5V. Typically obtained from the high voltage supply via a DC to DC buck converter.
-• Connector marked "12V": 12V to 24V. Ideally 19V for 6R speakers and 24 V for 8R speakers.
-
-Suggested speakers:
-• Wharfedale 220 (8 ohm nominal impedance).
-===============================================================================
 STM32 firmware:
 • Tool: STM32CubeIDE 1.19.0
 • Cube library: ~STM32Cube FW_F7 V1.17.4 (See *.ioc file for actual version).
