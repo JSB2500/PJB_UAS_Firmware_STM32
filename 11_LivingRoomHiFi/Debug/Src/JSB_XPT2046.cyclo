@@ -1,4 +1,0 @@
-/home/jsb/PJB Uber Audio System/PJB_UAS_Firmware_STM32/Shared/JSB_XPT2046.c:48:16:GetBest	6
-/home/jsb/PJB Uber Audio System/PJB_UAS_Firmware_STM32/Shared/JSB_XPT2046.c:43:6:XPT2046_Initialize	1
-/home/jsb/PJB Uber Audio System/PJB_UAS_Firmware_STM32/Shared/JSB_XPT2046.c:92:9:XPT2046_Sample	4
-/home/jsb/PJB Uber Audio System/PJB_UAS_Firmware_STM32/Shared/JSB_XPT2046.c:153:6:XPT2046_ConvertRawToScreen	1

@@ -1,3 +1,0 @@
-../Src/sai.c:34:6:MX_SAI2_Init	3
-../Src/sai.c:84:6:HAL_SAI_MspInit	7
-../Src/sai.c:183:6:HAL_SAI_MspDeInit	5

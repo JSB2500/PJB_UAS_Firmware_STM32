@@ -1,4 +1,0 @@
-../Src/stm32f7xx_hal_timebase_tim.c:181:6:TimeBase_TIM_PeriodElapsedCallback	1
-../Src/stm32f7xx_hal_timebase_tim.c:73:19:HAL_InitTick	5
-../Src/stm32f7xx_hal_timebase_tim.c:154:6:HAL_SuspendTick	1
-../Src/stm32f7xx_hal_timebase_tim.c:166:6:HAL_ResumeTick	1
