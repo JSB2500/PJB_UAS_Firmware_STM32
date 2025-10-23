@@ -164,11 +164,6 @@
 			<locationURI>WORKSPACE_LOC/Shared/Si468x/Si468x_minipatch.h</locationURI>
 		</link>
 		<link>
-			<name>Inc/spiritMP3Dec.h</name>
-			<type>1</type>
-			<locationURI>STFirmware/STM32AudioMiddlewares/Codecs/SpiritDSP_MP3_Dec/inc/spiritMP3Dec.h</locationURI>
-		</link>
-		<link>
 			<name>Middlewares/FreeRTOS</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -411,7 +406,11 @@
 		</variable>
 		<variable>
 			<name>STM32CUBE</name>
+<<<<<<< HEAD
 			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.17.4</value>
+=======
+			<value>file:/home/jsb/STM32Cube/Repository/STM32Cube_FW_F7_V1.17.4</value>
+>>>>>>> Linux_version
 		</variable>
 	</variableList>
 </projectDescription>
