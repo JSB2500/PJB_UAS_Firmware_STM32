@@ -5,7 +5,7 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1252577629" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 				<macros>
 					<stringMacro name="STFirmware" type="VALUE_TEXT" value="C:\ST\Firmware"/>
-					<stringMacro name="STM32CUBE" type="VALUE_TEXT" value="C:\ST\Firmware\STM32Cube_FW_F7_V1.15.0"/>
+					<stringMacro name="STM32CUBE" type="VALUE_TEXT" value="C:\ST\Repository\STM32Cube_FW_F7_V1.15.0"/>
 				</macros>
 				<externalSettings/>
 				<extensions>
