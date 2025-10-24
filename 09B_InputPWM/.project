@@ -212,11 +212,7 @@
 		</variable>
 		<variable>
 			<name>STM32CUBE</name>
-			<value>file:/C:/ST/Firmware/STM32Cube_FW_F7_V1.15.0</value>
-		</variable>
-		<variable>
-			<name>copy_PARENT</name>
-			<value>$%7BPARENT-2-PROJECT_LOC%7D</value>
+			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.15.0</value>
 		</variable>
 	</variableList>
 </projectDescription>

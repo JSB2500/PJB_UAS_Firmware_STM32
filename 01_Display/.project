@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>01 Display</name>
+	<name>01_Display</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -203,7 +203,7 @@
 	<variableList>
 		<variable>
 			<name>STM32CUBE</name>
-			<value>file:/C:/ST/Firmware/STM32Cube_FW_F7_V1.15.0</value>
+			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.15.0</value>
 		</variable>
 	</variableList>
 </projectDescription>

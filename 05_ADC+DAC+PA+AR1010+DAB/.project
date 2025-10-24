@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>05 ADC+DAC+PA+AR1010+DAB</name>
+	<name>05_ADC+DAC+PA+AR1010+DAB</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -251,7 +251,7 @@
 		</variable>
 		<variable>
 			<name>STM32CUBE</name>
-			<value>file:/C:/ST/Firmware/STM32Cube_FW_F7_V1.15.0</value>
+			<value>file:/C:/ST/Repository/STM32Cube_FW_F7_V1.15.0</value>
 		</variable>
 	</variableList>
 </projectDescription>
