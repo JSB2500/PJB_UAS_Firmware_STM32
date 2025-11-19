@@ -1,0 +1,1 @@
+19/11/2025: UI becomes very sluggish if SPDIF input selected and no SPDIF signal received e.g. because computer is switched off.
