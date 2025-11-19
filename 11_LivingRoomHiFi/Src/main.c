@@ -93,6 +93,21 @@ void MX_FREERTOS_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif
+
+PUTCHAR_PROTOTYPE
+// Hook printf.
+// JSB: Requires "syscalls.c" in order to intercept printf() etc.
+// JSB: Output from PB10 = pin 46 of STM32F7. Suitable GND is pin 49  of STM32F7.
+{
+  HAL_UART_Transmit(&huart3, (uint8_t *)&ch, 1, 0xFFFF);
+  return ch;
+}
+
 /* USER CODE END 0 */
 
 /**
