@@ -93,44 +93,6 @@ void MX_FREERTOS_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-// For debugging. Output printf etc to ITM:
-
-//int _write(int file, char *ptr, int len)
-//{
-//  for (int i = 0; i < len; i++)
-//  {
-//    ITM_SendChar((*ptr++));
-//  }
-//  return len;
-//}
-
-void ITM_Init(void)
-{
-  // Enable trace in the Debug MCU
-  CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
-
-  // Unlock ITM
-  ITM->LAR = 0xC5ACCE55;
-
-  // Enable stimulus port 0
-  ITM->TER |= 1UL << 0;
-
-  // Configure TPIU prescaler (depends on CPU and SWO frequency)
-  // Assuming your debugger SWO speed = 2 MHz
-  TPI->SPPR = 0x00000002; // NRZ mode
-  TPI->ACPR = (SystemCoreClock / 2000000) - 1;
-
-  // Enable ITM
-  // ITM->TCR = ITM_TCR_ITMENA_Msk | ITM_TCR_SYNCENA_Msk | ITM_TCR_TSENA_Msk;
-  ITM->TCR = ITM_TCR_ITMENA_Msk | ITM_TCR_SYNCENA_Msk;
-}
-
-int __io_putchar(int ch)
-{
-  ITM_SendChar(ch);
-  return ch;
-}
-
 /* USER CODE END 0 */
 
 /**
@@ -158,9 +120,6 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
-  // ITM debugging:
-  ITM_Init();
 
   Enable_DWT_Delay();
 

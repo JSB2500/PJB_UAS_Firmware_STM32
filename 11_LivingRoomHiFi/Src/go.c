@@ -1885,8 +1885,6 @@ void Go()
 
   while(1)
   {
-    printf("Main loop\n");
-
     if (Radio_ServiceToTune != sttNone)
     {
       if (I2SInput_Started) // Don't tune if no I2S else distortion occurs (on DAB, at least).
